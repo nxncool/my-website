@@ -3,6 +3,7 @@
 <head>
     <title>My AI Chatbot</title>
 </head>
+
 <style>
 body {
     background-image: url("background.jpg");
@@ -10,13 +11,24 @@ body {
     background-position: center;
     background-attachment: fixed;
 }
+
+h1 {
+    color: yellow;
+}
+
+p {
+    color: lightblue;
+}
 </style>
+
 <body>
 
     <h1>Welcome to My AI Chatbot</h1>
     <p>Talk to the AI using the chat bubble in the corner!</p>
+
     <script>
 (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="CzuzSEvZ-e8y11R9MexUs";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
 </script>
+
 </body>
 </html>
